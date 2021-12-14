@@ -26,7 +26,7 @@ export class ProductsService {
   }
 
   addProductToCart(productCart: ProdutoCarrinho): Observable<Carrinho>{
-    return this.http.post<Carrinho>("https://localhost:44324/api/carrinho/addProduct", productCart);
+    return this.http.post<Carrinho>("https://ecoofeeback.azurewebsites.net/api/carrinho/addProduct", productCart);
   }
 
   openProductModal() {
